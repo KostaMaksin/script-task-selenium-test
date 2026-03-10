@@ -34,21 +34,16 @@ Typical behavior:
 
 # Project Structure
 
-    x264-qp-analysis/
+    script-task-selenium-test/
     │
-    ├── qp_analysis.py
-    ├── foreman-cif.yuv
-    ├── requirements.txt
-    ├── README.md
-    │
-    ├── qp_outputs/
-    │   ├── qp_1.264
-    │   ├── qp_2.264
-    │   └── ...
-    │
-    ├── qp_results.csv
-    ├── qp_vs_filesize.png
-    └── qp_vs_time.png
+    ├── script-task/
+    │    ├── downloads
+    │    ├── qp_outputs
+    │    ├── qp_results
+    │    ├── venv
+    │    ├── ChatGPT_transcript.txt
+    │    ├── requirements.txt
+    │    └── script_task_qp_analysis.py
 
 ------------------------------------------------------------------------
 
@@ -59,10 +54,9 @@ Typical behavior:
 -   Python dependencies listed in:
 
 ```{=html}
-<!-- -->
+requirements.txt
 ```
-    requirements.txt
-
+    
 Supported platforms:
 
 -   macOS
@@ -181,12 +175,12 @@ is active.
 macOS / Linux:
 
 ``` bash
-python qp_analysis.py
+python script_task_qp_analysis.py
 ```
 
 Windows:
 
-    python qp_analysis.py
+    python script_task_qp_analysis.py
 
 ------------------------------------------------------------------------
 
@@ -256,20 +250,6 @@ Example:
 When you finish working:
 
     deactivate
-
-------------------------------------------------------------------------
-
-# Possible Future Improvements
-
-Potential extensions of this project:
-
--   PSNR analysis
--   SSIM quality metrics
--   Rate--distortion (RD) curves
--   Bitrate extraction from encoder logs
--   Parallel encoding
--   Excel report generation
--   Command line arguments for input file and resolution
 
 ------------------------------------------------------------------------
 
