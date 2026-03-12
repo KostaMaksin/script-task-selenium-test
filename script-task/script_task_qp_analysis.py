@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 current_file_dir = os.path.dirname(os.path.abspath(__file__))
 
-INPUT_YUV = os.path.join(current_file_dir, "downloads/foreman-cif.yuv")
+INPUT_YUV = os.path.join(current_file_dir, "test_data/foreman-cif.yuv")
 WIDTH = 352
 HEIGHT = 288
 OUTPUT_DIR = os.path.join(current_file_dir, "qp_outputs")
