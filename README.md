@@ -1,3 +1,9 @@
+# Please note before proceeding
+
+In your editor, here VS Code is used, open as folder only the 
+individual folder of each task, not the repo root as this might 
+cause trouble with paths, modules and running the tests.
+
 # x264 QP Feature Analysis
 
 Python automation script for analyzing the **QP (Quantization
@@ -253,6 +259,7 @@ When you finish working:
 
     deactivate
 
+------------------------------------------------------------------------
 
 # JPEGmini UI Automation Tests
 
@@ -272,7 +279,7 @@ Selenium + Python UI automation solution for the JPEGmini **Compress Videos** fl
 ## Project structure
 
 ```text
-jpegmini-ui-tests/
+selenium-test/
 ├── downloads/
 ├── pages/
 │   ├── __init__.py
@@ -280,7 +287,7 @@ jpegmini-ui-tests/
 │   ├── compress_page.py
 │   └── home_page.py
 ├── test_data/
-│   └── sample_video.mp4
+│   └── file_example_MP4_640_3MG.mp4
 ├── tests/
 │   ├── __init__.py
 │   └── test_video_compression.py
@@ -297,7 +304,7 @@ jpegmini-ui-tests/
 - Python 3.11 or 3.12 recommended
 - Google Chrome installed
 - Internet connection
-- A test video in `test_data/sample_video.mp4`
+- A test video in `test_data/file_example_MP4_640_3MG.mp4`
 
 ## Installation
 
@@ -370,7 +377,7 @@ pytest -s -v
 Place your input video here:
 
 ```text
-test_data/sample_video.mp4
+test_data/file_example_MP4_640_3MG.mp4
 ```
 
 Use a video that has not already been optimized.
@@ -414,7 +421,7 @@ Also run pytest from the project root.
 
 Check that:
 - Chrome is installed
-- your video file exists at `test_data/sample_video.mp4`
+- your video file exists at `test_data/file_example_MP4_640_3MG.mp4`
 - the page locators still match the current site HTML
 
 ## Dependencies
